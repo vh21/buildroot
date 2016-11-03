@@ -757,6 +757,10 @@ source "package/Config.in.host"
 
 source "Config.in.legacy"
 
+menu "Personal application"
+	source "package/bpftest/Config.in"
+endmenu
+
 menu "User-provided options"
 	depends on BR2_EXTERNAL != "support/dummy-external"
 

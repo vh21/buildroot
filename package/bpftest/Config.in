@@ -1,0 +1,2 @@
+config BR2_PACKAGE_BPFTEST
+	bool "my example"
