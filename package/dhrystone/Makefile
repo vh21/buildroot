@@ -3,6 +3,8 @@ LDLIBS += -lm
 
 all: dhrystone
 
+CFLAGS:=-g -O0
+
 dhrystone: dhry_1.o dhry_2.o
 	$(CC) $(CFLAGS) $(LDFLAGS) -o $@ $^ $(LDLIBS)
 
